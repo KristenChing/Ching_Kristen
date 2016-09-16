@@ -1,0 +1,10 @@
+A programming language is a language for computers that computers use to communicate with the user. Python is 
+one of many programming languages. Programming languages use source code and/or assembly code, which are translated 
+into machine code, which the computer understands. There are two types of programming languages: interpreted
+languages and compiled languages. Compiler languages translate source code into machine code before it is run. On
+the other hand, interpreted languages translate source code into machine code as the program is running. These two
+types have different purposes and have their own stengths/weaknesses. Python is a complied language and an 
+interpretive language because it contains characteristics of both types. This is because it converts source code
+into bytecode rather than machine code, then converts the bytecode to machine code while it runs. Print statements
+can be created in Python in the format of print("statement") which is a built-in Python function. When print
+statements are run, they will "print" or return in the running window whatever you told it to print.

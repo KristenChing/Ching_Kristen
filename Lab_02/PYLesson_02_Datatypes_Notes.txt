@@ -1,0 +1,11 @@
+Like in math, programming uses variables. However, variables in python work differently than the variables you 
+use in math. In programming variables can be set to a certain value and changed and be used in math operations.
+Variables can also be set to strings instead of numbers. A string is a "string" of text (usually words, etc.)
+The "numbers" are a datatype known as integers. Strings and integers can be converted between each other using
+the str() and int() commands. Other datatypes include floats (decimal numbers), lists ex. blah = ["str", "str", "str"]
+used for containing a set of information (strings or integers), and tuples (unmodifiable lists that use parentheses
+instead of square brackets). Variable names are case-sensitive and cannot begin with a number or underscore. It
+also cannot be the name of anything else, ex. you cannot name a variable print because it will think you are trying
+to use the print function. Variables can be printed using the print command. Like earlier mentioned, variables can
+also be used in arithmetic operations, +, * (multiplication), etc. Strings can also be added like numbers. Strings
+and integers can also be combined (ex. in a print statement).
