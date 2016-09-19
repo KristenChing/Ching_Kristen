@@ -1,0 +1,12 @@
+When you make a variable make user that your code is easy to read. Python
+has a lot of built in functions that we call by typing them. One of these built in
+functions is the input() function whose format is variable = input("type something here")
+This sets the variable value to whatever you typed in response to the prompt "type something
+here." If you print the variable it will print whatever you typed in response to 
+the prompt. Anything you enter into an input() function will default be a string, even if
+you type in a number which is why you have to convert it to an integer (well, that's
+only if you need it to be an integer and you need to add it or something) using the 
+int() function. You can also convert it back using the str() function which pretty
+much does the same thing only it converts it to a string. 
+
+(A variant function on input() is raw_input()).

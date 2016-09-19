@@ -1,0 +1,20 @@
+#Kristen Ching
+import time
+shoeSize = int(input("What is your shoe size? (No half sizes, round up) "))
+yearOfBirth = int(input("What year were you born? "))
+print ("Calculating...")
+time.sleep(5)
+calculation = str(shoeSize*5)
+print ("Shoe size times 5 =", calculation)
+newCalc = str(int(calculation) +50)
+print ("(Previous value) + 50 =", newCalc)
+calculation = str(int(newCalc)*20)
+print ("(Previous value) times 20 =", calculation)
+newCalc = str(int(calculation) + 1015)
+print ("(Previous value) + 1015 =", newCalc)
+finalCalculation = str(int(newCalc) - yearOfBirth)
+time.sleep(1)
+print ("This is the final calculation:", finalCalculation)
+time.sleep(2)
+print ("You are", finalCalculation[1:3], "years old.")
+
