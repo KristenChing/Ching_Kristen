@@ -19,8 +19,8 @@ The way that def is used is def functionName(a,b): . The "Placeholder variables"
 To call the function, you just do functionName(c,d) and you will use whatever variables you want
 to use in the parentheses. So if your function is:
 def function(a,b):
-	print a
-	print b
+	print (a)
+	print (b)
 
 #And you have variables c and d already defined (c= "c") (d = "d")
 #Here you call the function

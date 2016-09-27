@@ -1,0 +1,14 @@
+Functions by default don't return values. This means that you don't have
+to write print ("blah blah blah") inside of the function, you can just save
+the value of the function's output. For example,
+
+def meow(null):
+	null +=1
+	return null
+	#print (null)
+
+Another good reason to be doing this is because if you have a function where you
+DON'T want it to print, you will not have a way to retrieve your output UNLESS
+you use the return function. Otherwise, if you just run the function, it will NOT
+output ANYTHING (even if you have called it.) Returning function output also makes
+working with functions more flexible. The uses of the function output is not as limited
