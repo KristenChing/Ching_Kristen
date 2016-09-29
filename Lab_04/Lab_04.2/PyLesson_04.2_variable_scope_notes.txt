@@ -1,0 +1,17 @@
+Sometimes when you are working with code you will come across an error that says something like
+"Blah blah blah is not a global variable" or something like that. What does that mean? A global
+variable is a variable that can be accessed from anywhere in your code. This usually occurs when
+you have defined variables at the very top of your page that are not inside of any functions. You
+might be wondering, well then when is a variable not global? The best example of this is a variable
+found inside of a function. In-function variables can only be accessed from inside a function. So what
+are these variables called? They are called "out of scope" based on what is out of scope. For
+example, if you have two functions called function1 and function2, and function1 contains variable1
+and function2 contains variable2 (very generic names, I know), then function1 cannot access variable2
+and function2 cannot access variable1 and this is called function2 being out of variable1's scope.
+The scope (of a varaible) is the area of (code) in which a variable can be accessed. If you are
+going to need to be continually doing the same thing over and over in your code, it is a good idea
+to make functions for it! (That way you can spare yourself the amount of time it takes to type
+stuff, plus typing lots of stuff isn't necessarily convenient). You can also split different parts
+that need to be done into separate functions, for example you can have two different functions for adding 
+and displaying the sum. This way things can also be less complicated and it will be easier to find
+mistakes in your code. 

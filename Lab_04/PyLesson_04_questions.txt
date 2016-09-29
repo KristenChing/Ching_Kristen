@@ -1,0 +1,26 @@
+1a. How do you begin writing a program?
+You can begin writing a program with either a text file and labeling it .py instead of .txt (or by opening Py IDLE and going to File>>new>>, but we aren't doing that in this class...)
+
+1b. What does a program file consist of?
+A program file consists of code. 
+
+1c. Do you need fancy development software? Why?
+Not necessarily.  You just need to have Python installed so your computer knows what language you are talking to it in. It also lets you save a .py file, whereas in the terminal it doesn't. (Or at least I don't think it does).
+
+2a. Why does the method need to be at the top of most of the programs that we have created so far? 
+Methods don't always have to be at the very top, but you need to have a method defined before you call it.
+
+2b. How does Python run lines of code?
+Python runs lines of code by converting it to bytecode, then converting the bytecode to machine code as it runs.
+
+3a. Why do we need parameters?
+We need parameters because otherwise your function will be confused and will not know what to do with the values that you give it.
+
+3b. How do they enhance our use of methods?
+They enhance our use of methods by making functions easy and convenient.
+
+3c. What do they enable use to do? 
+They enable us to be able to repeat things (over and over) with different inputs. (Speaking of doing things over and over, when are we learning 'while'??)
+
+4. What is the difference between return methods and the other kind of method we used?
+Return methods are more convenient and allow us to save the value of a function's output once it is called. That way it is already preset to a variable (calling the function acts as a variable) instead of having to set it to a separate variable and then printing it...
