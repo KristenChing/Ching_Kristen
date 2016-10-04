@@ -24,7 +24,7 @@ print("The area of your rectangle is...", h*w)
 
 #Question #7
 #Because of the double quotes, it thinks "R. Kelly said " is a string and "I believe I can fly" is a variable.
-print('R. Kelly said "I believe I can fly!"')
+print('R. Kelly said, "I believe I can fly!"')
 
 print("This one goes on top\nThis one goes on bottom")
 
