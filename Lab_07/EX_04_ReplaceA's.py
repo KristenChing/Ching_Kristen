@@ -1,5 +1,8 @@
 #Kristen Ching
 sentence = input("Please enter a sentence. ")
-while "a" in sentence:
-        sentence = sentence.replace("a", "@")
-print(sentence)
+def replace():
+        global sentence
+        while "a" in sentence:
+                sentence = sentence.replace("a", "@")
+        return(sentence)
+print(replace())
