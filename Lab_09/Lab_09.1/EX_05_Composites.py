@@ -5,12 +5,15 @@ def gFactor(num):
         if num % x == 0:
             return 1
     return 0
-def removeComposites():
+def removePrimes():
     global nums
-    for num in nums:
-        if gFactor(num) == 1:
-            nums.remove(num)
+    i = 0
+    while i < len(nums):
+        if gFactor(nums[i]) == 0:
+            nums.pop(i)
+        i+=1
+        
 
-removeComposites()
+removePrimes()
 print(nums)
 

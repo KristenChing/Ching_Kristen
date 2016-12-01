@@ -1,6 +1,10 @@
 #Kristen Ching
 words = ["hello", "pie", "apple", "cat", "omonomonomonomonom"]
+output = ""
 def first(words):
-    for x in words:
-        print(x[0])
+    global output
+    for i in words:
+        output = output + i[0]
+        return output
+print(first(words))
 first(words)
