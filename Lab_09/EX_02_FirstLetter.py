@@ -4,7 +4,7 @@ output = ""
 def first(words):
     global output
     for i in words:
-        output = output + i[0]
-        return output
+        output += i[0]
+    return output
 print(first(words))
 first(words)
