@@ -8,9 +8,12 @@ def gFactor(num):
 def removePrimes():
     global nums
     i = 0
-    while i < len(nums):
-        if gFactor(nums[i]) == 0:
-            nums.pop(i)
+    #while i < len(nums):
+        #if gFactor(nums[i]) == 0:
+        #nums.pop(i)
+    for i in nums:
+        if gFactor(i) == 0:
+            nums.remove(i)
         i+=1
         
 
