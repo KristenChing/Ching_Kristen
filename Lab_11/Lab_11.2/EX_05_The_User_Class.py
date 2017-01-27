@@ -25,12 +25,10 @@ def main():
     createAvat = input("Would you like to use a public avatar? Enter y/n ")
     if createAvat == "y":
         avat = input("Please enter a name for your public avatar. ")
-        user1 = User(firstName, lastName)
-        user1.setVals(firstName, lastName, avat)
+        user1 = User(firstName, lastName, avat)
     else:
         user1 = User(firstName, lastName)
 
-    #user1.setVals(firstName, lastName, avat)
     print(user1.__str__())
     
 main()
