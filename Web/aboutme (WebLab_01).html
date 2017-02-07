@@ -10,6 +10,7 @@
 	<h4><a href = "#Section 1">Section 1: Basic Stuff</a></h4>
 	<h4><a href = "#Section 2">Section 2: Print Formatting</a></h4>
 	<h4><a href = "#Section 3">Section 3: Other Commands</a></h4>
+	<h4><a href = "#Section 4">Section 4: Tables</a></h4>
 
 	<h3><a name = "Section 1"></a>Basic Stuff</h3>
 	First, in order to create a website, you have to define a file as an HTML. In the basics of HTML code, all commands are within <>, which are called tags. In order to call a command, you would have to put it within tags and to close it, put it within tags but with a slash after the opening tag. So to define a file as an HTML, you type < ! doctype html >. </br></br>
@@ -28,6 +29,16 @@
 	- linking to other sections: < a href = #"identifier name" >name< /a > </br>
 	- adding images: < img src = "imagename" height = 0 width = 0 ></br>
 	- link titles: < a href = "site address" title = "link title" >link name< /a >
-
+	<hr/>
+	<h3><a name = "Section 4"</a>Tables</h3>
+	Basically to create a table you write < table >.
+	Inside the table you can have table rows, < tr >, and inside each < tr > you have < td >, which is table data.
+	A table border is created using < table border = "num" >, which creates a border around the table, and 1 px lines dividing values.
+	We can also add images and links inside of our table. </br></br>
+	We can create headers for our table by using < th >, which stands for table header, inside of our < td > 's. We can also have an empty cell just by typing < td >< /td > The table header is automatically bolded so we don't have to bold it.
+	In addition, we can add a title for the whole table, which is done inside a table header tag: < th colspan = "num" >Title< /th > 
+	We can adjust the height and width of our table using percentages so that it will take up that portion of the table. This can be done inside of a th tag or inside of the entire table tag.
+	Another thing that is useful is cellpadding (cellpadding = ""). This is the space between the text and the cell border (pixels), and is set inside of the table tag.
+	Lastly, cellspacing (cellspacing = "") adjusts the thickness of the borders that separate the cells.
 </body>
 </html>
