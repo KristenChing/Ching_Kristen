@@ -73,14 +73,30 @@
 	<li>{font-weight: bold;}</li>
 	<li>{font-style:italic;}</li>
 	<li>{font-family:arial}</li>
-	<li>{text-align:center;}</li>
+	<li>{text-align:center;} (or right, or left)</li>
 	<li>{text-indent:0px;}</li>
-	<li>{background-color:blue;} (this must be done in the body)</li>
+	<li>{background-color:blue;} (this must be done in the body in order to edit background of the webpage, otherwise it will just create a "highlight" over the text)</li>
 	<li>{background-image:url(nameoffile.png);} ("tiles" itself in background)</li>
 	<li>{background-repeat:no-repeat;} (and then it will "no tile")</li>
 	<li>{background-repeat:repeat-x;} (row)</li>
 	<li>{background-repeat:repeat-y;} (colomn)</li>
-	<li>{background-position: 0px 2px} (x y from top left corner/can also be done with percentages)</li>
+	<li>{background-position: 0px 2px;} (x y from top left corner/can also be done with percentages)</li>
+	<li>{padding: 20px;} (automatic: top and bottom)</li>
+	<li>{padding-top: 20px;}/{padding-bottom: 20px;}/{padding-left: 20px;}/{padding-right: 20px;}</li>
+	<li>{border-color: purple;}</li>
+    <li>{border-width: 1px;}</li>
+    <li>{border-style: dotted/dashed/solid;}</li>
+    <li>{border-top/bottom/left/right-color: blue;}</li>
+    <li>{border-top/bottom/left/right-style: dotted/dashed;}</li>
+    <li>{border-top/bottom/left/right-width: 2px;}</li></br>
+	- But you don't have to do it the hard way. You can just say {border-style: dotted dashed solid dotted;} and it will move in clockwise order starting from top. This is also appilicable to other attributes.
+	<br/> - Margin Refers to the whitespace between items.
+	<li>{margin: 30px;}</li>
+	<li>a:link{color: white}(link color/default)</li>
+	<li>a:visited{color: blue}(link color after having visited the link)</li>
+	<li>a:hover{color: green}(link color when mouse is hovering over the link)</li>
+	<li>a:active{color: white}(while clicking on the link)</li>
+	<li>{text-decoration: none/underline/line-through/overline}</li>
 	</ul></h5>
 	</body>
 </html>
