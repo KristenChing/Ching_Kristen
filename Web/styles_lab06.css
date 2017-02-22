@@ -1,0 +1,36 @@
+h1 {font-family: papyrus;
+text-align: center;
+background-color: blue;
+color: white;
+border: 2px white dotted;
+margin: 50px;
+padding: 100px}
+a:link{color: blue;}
+a:visited{color: black;}
+a:hover{color: red; background-color: yellow}
+a:active{color: yellow; background-color:red}
+		
+p{text-align: center;
+text-indent: 50px;
+ margin: 50px;
+width: 90%;
+font-size: 30px;
+text-decoration:underline;
+}
+h5 {font-family:arial;}
+body {background-color:#8499cf}
+
+p:first-letter{
+color:blue;
+font-family: papyrus;
+font-style: italic;
+font-weight: bold;
+font-size: 50px;
+}
+p::after{
+	font-size: 15px;
+content: "(no it's not...)"
+}
+p:nth-child(10){
+color:green;
+}
