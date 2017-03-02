@@ -32,115 +32,212 @@
 <body>
 	<h5>Aeryial font? well duh.</h5>
 	<h3>Index</h3>
-	<h4><a href = "#Section 1">Section 1: Basic Stuff</a></h4>
-	<h4><a href = "#Section 2">Section 2: Print Formatting</a></h4>
-	<h4><a href = "#Section 3">Section 3: Other Commands</a></h4>
-	<h4><a href = "#Section 4">Section 4: Tables</a></h4>
-	<h4><a href = "#Section 5">Section 5: Lists</a></h4>
-	<h4><a href = "#Section 6">Section 6: CSS</a></h4>
-	<h4><a href = "#Section 7">Section 7: Div, Span, and Classes</a></h4>
-	<h4><a href = "#Section 8">Section 8: Style Sheets, Psuedo Elements, Child Selectors, and ID tags</a></h4>
-	<h3><a name = "Section 1"></a>Basic Stuff</h3>
-	<h5>First, in order to create a website, you have to define a file as an HTML. In the basics of HTML code, all commands are within <span><></span>, which are called tags. In order to call a command, you would have to put it within tags and to close it, put it within tags but with a slash after the opening tag. So to define a file as an HTML, you type <span>< ! doctype html ></span>. </br></br>
-	The basic commands are <span>< html ></span>, <span>< body ></span>, and <span>< head ></span>, which define the parts of the website. The head contains "hidden" content and the body contains the main content which will be seen by the viewer. You can also add a title, which is the tab name.</h5>
-	<hr/>
-	<h3><a name = "Section 2"</a>Print formatting</h3>
-	<h5>HTML does not show returns/tabs and will print stuff all in one line. Which is why the <span>< p ></span> exists, because it is for creating a new paragraph! You can also use <span>< /br ></span> to create linebreaks. Additional ways to edit text are <span>< strong ></span> (bold) and <span>< em ></span> (italicize).
-	Font sizes have a range from  <span>< h1 </span>> to <span>< h5 ></span>, <span>< h1 ></span> being the largest and  <span>< h5 ></span> being the smallest.</h5> 
-	<hr/>
-	<h3><a name = "Section 3"</a>Other Commands</h3>
-	<h5><ul>
-	<li>comments look like this: <span>< !--this is a comment-- ></span> </br></li>
-	<li>a horizontal line: <span>< hr/ ></span>. </br></li>
-	<li>links are added using <span>< a href = link address >a link< /a ></span>
-	<a href = "http://tpprogramming.blogspot.com/p/cplesson.html" title = "Mr. Robinette's Website">Here is a link to a website.</a></br></li>
-	<li>creating section titles: The identifier name is used so it can be linked to from other links.</br></li>
-	<li>linking to other sections: <span>< a href = #"identifier name" >name< /a ></span> </br></li>
-	<li>adding images: <span>< img src = "imagename" height = 0 width = 0 ></span></br></li>
-	<li>link titles: <span>< a href = "site address" title = "link title" >link name< /a ></span></li>
-	</ul></h5><hr/>
-	<h3><a name = "Section 4"</a>Tables</h3>
-	<h5>
-	Basically to create a table you write <span>< table ></span>.
-	Inside the table you can have table rows, <span>< tr ></span>, and inside each <span>< tr ></span> you have <span>< td ></span>, which is table data.
-	A table border is created using <span>< table border = "num" ></span>, which creates a border around the table, and 1 px lines dividing values.
-	We can also add images and links inside of our table. </br></br>
-	We can create headers for our table by using <span>< th ></span>, which stands for table header, inside of our <span>< td ></span> 's. We can also have an empty cell just by typing <span>< td >< /td ></span> The table header is automatically bolded so we don't have to bold it.
-	In addition, we can add a title for the whole table, which is done inside a table header tag: <span>< th colspan = "num" >Title< /th ></span>
-	We can adjust the height and width of our table using percentages so that it will take up that portion of the table. This can be done inside of a th tag or inside of the entire table tag.
-	Another thing that is useful is cellpadding (cellpadding = ""). This is the space between the text and the cell border (pixels), and is set inside of the table tag.
-	Lastly, cellspacing (cellspacing = "") adjusts the thickness of the borders that separate the cells.
-	</h5><hr/>
-	<h3><a name = "Section 5"</a>Lists</h3>
-	<h5>
-	Lists: 
-	<ol><li>ordered list. <span>< ol ></span></li>
-	<li>unordered list. <span>< ul ></span></li></ol>
-	What's the difference? An ordered list contains numbers.
-	List items: <span>< li ></span>
-	</h5>
-	<hr/>
-	<h3><a name = "Section 6"</a>CSS</h3>
-	<h5>
-	Basically cool font stuff. Colors, font, etc. 
-	<span>< style type = "text/css" ></span> <-- activates CSS. MUST be in the head.
-	ex. p {color:blue;font-family:arial} - this changes paragraph text so that the words in the paragraph are blue and in arial font.
-	You can also just use RGB values. This works the same way for editing spacing, such as line-height:0% Whatever you are editing, in this case, p , the paragraph text, is called the element. The property is what you are changing about the element text. (color, font, etc.) You can even edit the entire body element. </br></br>
-	Furthermore, you can edit more than one type at a time simply by using a comma. :O
-	CSS properties:
-	<ul>
-	<li>{color#000000;}</li>
-	<li>{line-height:num%;} (spacing) </li>
-	<li>{font-weight: bold;}</li>
-	<li>{font-style:italic;}</li>
-	<li>{font-family:arial}</li>
-	<li>{text-align:center;} (or right, or left)</li>
-	<li>{text-indent:0px;}</li>
-	<li>{background-color:blue;} (this must be done in the body in order to edit background of the webpage, otherwise it will just create a "highlight" over the text)</li>
-	<li>{background-image:url(nameoffile.png);} ("tiles" itself in background)</li>
-	<li>{background-repeat:no-repeat;} (and then it will "no tile")</li>
-	<li>{background-repeat:repeat-x;} (row)</li>
-	<li>{background-repeat:repeat-y;} (colomn)</li>
-	<li>{background-position: 0px 2px;} (x y from top left corner/can also be done with percentages)</li>
-	<li>{padding: 20px;} (automatic: top and bottom)</li>
-	<li>{padding-top: 20px;}/{padding-bottom: 20px;}/{padding-left: 20px;}/{padding-right: 20px;}</li>
-	<li>{border-color: purple;}</li>
-    <li>{border-width: 1px;}</li>
-    <li>{border-style: dotted/dashed/solid;}</li>
-    <li>{border-top/bottom/left/right-color: blue;}</li>
-    <li>{border-top/bottom/left/right-style: dotted/dashed;}</li>
-    <li>{border-top/bottom/left/right-width: 2px;}</li></br>
-	- But you don't have to do it the hard way. You can just say {border-style: dotted dashed solid dotted;} and it will move in clockwise order starting from top. This is also appilicable to other attributes.
-	<br/> - Margin Refers to the whitespace between items.
-	<li>{margin: 30px;}</li>
-	<li>a:link{color: white}(link color/default)</li>
-	<li>a:visited{color: blue}(link color after having visited the link)</li>
-	<li>a:hover{color: green}(link color when mouse is hovering over the link)</li>
-	<li>a:active{color: white}(while clicking on the link)</li>
-	<li>{text-decoration: none/underline/line-through/overline}</li>
-	<li>{list-style-type: none/circle/square}</li>
-	<li>{list-style-image: url("")}</li>
-	</ul>
-	</h5>
-	<h3><a name = "Section 7"</a>Div, Span and Classes</h3>
-	<h5>
-	The Div tag: can be used to completely surround an amount of text. it is used to separate different sections. <br/>
-	The Span tag: only the text between the opening and closing span tags is affected, basically used to isolate parts of text <br/>
-	To create a class, you define it in the style tag and use it as the element. This is done by adding a . before the class name. The class is linked to the text by typing in the opening tag (which can be anything) class = "classname"
-	</h5>
-	<h3><a name = "Section 8"</a>Style Sheets, pseudo elements, child selectors, and ID</h3>
-	<h5> a style sheet is used to apply consistent css effects to multiple webpages without having to copy and paste everything. The style sheet is on a separate css file and contains the default styling information. In order for the style sheet to take effect, the style sheet is linked to the html file in the head. < link rel = "stylesheet" type = "text/css" href = "stylesheet.css" > Any part of the style sheet can be overridden at any time by using the style tags we are already using.
-	<br/>
-	pseudo elements are cool effects that are added on to an element, such as :first-letter{} :after{} :before{}
-	<br/>
-	Child selectors allow distinction between parts of text, esp. if you want to edit one paragraph of text, but don't want to edit everything that is in that font. div > p means that div is the parent and p is the child. so it will edit the p that is inside of the div.
-	<br/>
-	lastly, ID tags. These are created by putting id = "" into the starting/opening tag ie < p id = "none" > and accessed in css by #none{}
-	</h5>
-	<h3><a name = "Section 9"</a>Positioning and Sizing</h3>
-	<h5> {position: static(default)/absolute/relative/fixed} (ex. text surrounded by border )static is the default, and follows the page formatting. the border will stretch across the rest of the line. a second text will appear below it. In absolute both will appear surrounded only to edges of the text on top of each other on the top left corner. Relative positioning it is positioned relative to its original position. In fixed positioning, it doesn't move. It stays where it is.
-	<br/>
-	{max-height:} / {max-width:} controls max height and max width without changing proportions of images
-	</h5>
+	<nav>
+		<h4><a href = "#Section 1">Section 1: Basic Stuff</a></h4>
+		<h4><a href = "#Section 2">Section 2: Print Formatting</a></h4>
+		<h4><a href = "#Section 3">Section 3: Other Commands</a></h4>
+		<h4><a href = "#Section 4">Section 4: Tables</a></h4>
+		<h4><a href = "#Section 5">Section 5: Lists</a></h4>
+		<h4><a href = "#Section 6">Section 6: CSS</a></h4>
+		<h4><a href = "#Section 7">Section 7: Div, Span, and Classes</a></h4>
+		<h4><a href = "#Section 8">Section 8: Style Sheets, Psuedo Elements, Child Selectors, and ID tags</a></h4>
+	</nav>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 1"></a>Basic Stuff</h3>
+			</header>
+			<h5>First, in order to create a website, you have to define a file as an HTML.
+			In the basics of HTML code, all commands are within <span><></span>, which are called tags.
+			In order to call a command, you would have to put it within tags and to close it, put it within tags but with a slashafter the opening tag. 
+			So to define a file as an HTML, you type <span>< ! doctype html ></span>. </br></br>
+			The basic commands are <span>< html ></span>, <span>< body ></span>, and <span>< head ></span>, which define the parts of the website.
+			The head contains "hidden" content and the body contains the main content which will be seen by the viewer.
+			You can also add a title, which is the tab name.</h5>
+			<hr/>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+			<h3><a name = "Section 2"</a>Print formatting</h3>
+			<h5>HTML does not show returns/tabs and will print stuff all in one line.
+			Which is why the <span>< p ></span> exists, because it is for creating a new paragraph!
+			You can also use <span>< /br ></span> to create linebreaks.
+			Additional ways to edit text are <span>< strong ></span> (bold) and <span>< em ></span> (italicize).
+			Font sizes have a range from  <span>< h1 </span>> to <span>< h5 ></span>, <span>< h1 ></span> being the largest and  <span>< h5 ></span> being the smallest.</h5> 
+			<hr/>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 3"</a>Other Commands</h3>
+			</header>
+			<h5><ul>
+			<li>comments look like this: <span>< !--this is a comment-- ></span> </br></li>
+			<li>a horizontal line: <span>< hr/ ></span>. </br></li>
+			<li>links are added using <span>< a href = link address >a link< /a ></span>
+			<a href = "http://tpprogramming.blogspot.com/p/cplesson.html" title = "Mr. Robinette's Website">Here is a link to a website.</a></br></li>
+			<li>creating section titles: The identifier name is used so it can be linked to from other links.</br></li>
+			<li>linking to other sections: <span>< a href = #"identifier name" >name< /a ></span> </br></li>
+			<li>adding images: <span>< img src = "imagename" height = 0 width = 0 ></span></br></li>
+			<li>link titles: <span>< a href = "site address" title = "link title" >link name< /a ></span></li>
+			</ul></h5><hr/>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 4"</a>Tables</h3>
+			</header>
+			<h5>
+			Basically to create a table you write <span>< table ></span>.
+			Inside the table you can have table rows, <span>< tr ></span>, and inside each <span>< tr ></span> you have <span>< td ></span>, which is table data.
+			A table border is created using <span>< table border = "num" ></span>, which creates a border around the table, and 1 px lines dividing values.
+			We can also add images and links inside of our table. </br></br>
+			We can create headers for our table by using <span>< th ></span>, which stands for table header, inside of our <span>< td ></span> 's. 
+			We can also have an empty cell just by typing <span>< td >< /td ></span> The table header is automatically bolded so we don't have to bold it.
+			In addition, we can add a title for the whole table, which is done inside a table header tag: <span>< th colspan = "num" >Title< /th ></span>
+			We can adjust the height and width of our table using percentages so that it will take up that portion of the table. 
+			This can be done inside of a th tag or inside of the entire table tag.
+			Another thing that is useful is cellpadding (cellpadding = ""). 
+			This is the space between the text and the cell border (pixels), and is set inside of the table tag.
+			Lastly, cellspacing (cellspacing = "") adjusts the thickness of the borders that separate the cells.
+			</h5><hr/>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				h3><a name = "Section 5"</a>Lists</h3>
+			</header>
+			<h5>
+			Lists: 
+			<ol><li>ordered list. <span>< ol ></span></li>
+			<li>unordered list. <span>< ul ></span></li></ol>
+			What's the difference?
+			An ordered list contains numbers.
+			List items: <span>< li ></span>
+			</h5>
+			<hr/>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 6"</a>CSS</h3>
+			</header>
+			<h5>
+			Basically cool font stuff. Colors, font, etc. 
+			<span>< style type = "text/css" ></span> <-- activates CSS.
+			MUST be in the head.
+			ex. p {color:blue;font-family:arial} - this changes paragraph text so that the words in the paragraph are blue and in arial font.
+			You can also just use RGB values.
+			This works the same way for editing spacing, such as line-height:0% 
+			Whatever you are editing, in this case, p , the paragraph text, is called the element. 
+			The property is what you are changing about the element text. (color, font, etc.) You can even edit the entire body element. </br></br>
+			Furthermore, you can edit more than one type at a time simply by using a comma. :O
+			CSS properties:
+			<ul>
+			<li>{color#000000;}</li>
+			<li>{line-height:num%;} (spacing) </li>
+			<li>{font-weight: bold;}</li>
+			<li>{font-style:italic;}</li>
+			<li>{font-family:arial}</li>
+			<li>{text-align:center;} (or right, or left)</li>
+			<li>{text-indent:0px;}</li>
+			<li>{background-color:blue;}(this must be done in the body in order to edit background of the webpage, otherwise it will just create a "highlight" over the text)</li>
+			<li>{background-image:url(nameoffile.png);} ("tiles" itself in background)</li>
+			<li>{background-repeat:no-repeat;} (and then it will "no tile")</li>
+			<li>{background-repeat:repeat-x;} (row)</li>
+			<li>{background-repeat:repeat-y;} (colomn)</li>
+			<li>{background-position: 0px 2px;} (x y from top left corner/can also be done with percentages)</li>
+			<li>{padding: 20px;} (automatic: top and bottom)</li>
+			<li>{padding-top: 20px;}/{padding-bottom: 20px;}/{padding-left: 20px;}/{padding-right: 20px;}</li>
+			<li>{border-color: purple;}</li>
+			<li>{border-width: 1px;}</li>
+			<li>{border-style: dotted/dashed/solid;}</li>
+			<li>{border-top/bottom/left/right-color: blue;}</li>
+			<li>{border-top/bottom/left/right-style: dotted/dashed;}</li>
+			<li>{border-top/bottom/left/right-width: 2px;}</li></br>
+			- But you don't have to do it the hard way. You can just say {border-style: dotted dashed solid dotted;} and it will move in clockwise order starting from top. This is also appilicable to other attributes.
+			<br/> - Margin Refers to the whitespace between items.
+			<li>{margin: 30px;}</li>
+			<li>a:link{color: white}(link color/default)</li>
+			<li>a:visited{color: blue}(link color after having visited the link)</li>
+			<li>a:hover{color: green}(link color when mouse is hovering over the link)</li>
+			<li>a:active{color: white}(while clicking on the link)</li>
+			<li>{text-decoration: none/underline/line-through/overline}</li>
+			<li>{list-style-type: none/circle/square}</li>
+			<li>{list-style-image: url("")}</li>
+			</ul>
+			</h5>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>		
+				<h3><a name = "Section 7"</a>Div, Span and Classes</h3>
+			</header>
+			<h5>
+			The Div tag: can be used to completely surround an amount of text. 
+			it is used to separate different sections. <br/>
+			The Span tag: only the text between the opening and closing span tags is affected, basically used to isolate parts of text <br/>
+			To create a class, you define it in the style tag and use it as the element. 
+			This is done by adding a . before the class name. The class is linked to the text by typing in the opening tag (which can be anything) class = "classname"
+			</h5>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 8"</a>Style Sheets, pseudo elements, child selectors, and ID</h3>
+			</header>
+			<h5> a style sheet is used to apply consistent css effects to multiple webpages without having to copy and paste everything. 
+			The style sheet is on a separate css file and contains the default styling information. 
+			In order for the style sheet to take effect, the style sheet is linked to the html file in the head. 
+			< link rel = "stylesheet" type = "text/css" href = "stylesheet.css" > 
+			Any part of the style sheet can be overridden at any time by using the style tags we are already using.
+			<br/>
+			pseudo elements are cool effects that are added on to an element, such as :first-letter{} :after{} :before{}
+			<br/>
+			Child selectors allow distinction between parts of text, esp. if you want to edit one paragraph of text, but don't want to edit everything that is in that font. 
+			div > p means that div is the parent and p is the child. 
+			so it will edit the p that is inside of the div.
+			<br/>
+			lastly, ID tags. 
+			These are created by putting id = "" into the starting/opening tag ie < p id = "none" > and accessed in css by #none{}
+			</h5>
+		</article>
+	</section>	
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 9"</a>Positioning and Sizing</h3>
+			</header>
+			<h5> {position: static(default)/absolute/relative/fixed} 
+			(ex. text surrounded by border )
+			static is the default, and follows the page formatting. 
+			the border will stretch across the rest of the line. 
+			a second text will appear below it. 
+			In absolute both will appear surrounded only to edges of the text on top of each other on the top left corner. 
+			Relative positioning it is positioned relative to its original position. 
+			In fixed positioning, it doesn't move. 
+			It stays where it is.
+			<br/>
+			{max-height:} / {max-width:} controls max height and max width without changing proportions of images
+			</h5>
+		</article>
+	</section>
 	</body>
 </html>
