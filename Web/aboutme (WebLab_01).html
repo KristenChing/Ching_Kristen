@@ -3,8 +3,8 @@
 <img src = "16123915_1746327422350139_8211787001037324288_a.jpg" height = 250 width = 250>
 <div><h1>Welcome!</h1></div>
 <h2><a name = "Home"></a>
-<h4><a href = "a website.html">Page 2</a></h4>
-<h4><a href = "WebLab_02.html">Lab_02</a></h4>
+<h4><a class = "link" href = "a website.html">Page 2</a></h4>
+<h4><a class = "link" href = "WebLab_02.html">Lab_02</a></h4>
 <head>
 	<style type = "text/css">
 		div{
@@ -24,7 +24,13 @@
 			background-color: white;
 		}
 		span{
-		color: black
+			color: black;
+		}
+		li:nth-child(odd){
+			color: blue;
+		}
+		a:not(.link){
+			color:green;
 		}
 	</style>
 </head>
@@ -41,6 +47,9 @@
 		<h4><a href = "#Section 6">Section 6: CSS</a></h4>
 		<h4><a href = "#Section 7">Section 7: Div, Span, and Classes</a></h4>
 		<h4><a href = "#Section 8">Section 8: Style Sheets, Psuedo Elements, Child Selectors, and ID tags</a></h4>
+		<h4><a href = "#Section 9">Section 9: Positioning and Sizing</a></h4>
+		<h4><a href = "#Section 10">Section 10: Organizing Information on a Webpage</a></h4>
+		<h4><a href = "#Section 11">Section 11: Nth Child Selectors and Negation Psuedo Classes</a></h4>
 	</nav>
 	
 	<section>
@@ -62,7 +71,7 @@
 	<section>
 		<article>
 			<header>
-			<h3><a name = "Section 2"</a>Print formatting</h3>
+			<h3><a name = "Section 2"></a>Print formatting</h3>
 			<h5>HTML does not show returns/tabs and will print stuff all in one line.
 			Which is why the <span>< p ></span> exists, because it is for creating a new paragraph!
 			You can also use <span>< /br ></span> to create linebreaks.
@@ -75,7 +84,7 @@
 	<section>
 		<article>
 			<header>
-				<h3><a name = "Section 3"</a>Other Commands</h3>
+				<h3><a name = "Section 3"></a>Other Commands</h3>
 			</header>
 			<h5><ul>
 			<li>comments look like this: <span>< !--this is a comment-- ></span> </br></li>
@@ -93,7 +102,7 @@
 	<section>
 		<article>
 			<header>
-				<h3><a name = "Section 4"</a>Tables</h3>
+				<h3><a name = "Section 4"></a>Tables</h3>
 			</header>
 			<h5>
 			Basically to create a table you write <span>< table ></span>.
@@ -115,10 +124,9 @@
 	<section>
 		<article>
 			<header>
-				h3><a name = "Section 5"</a>Lists</h3>
+				<h3><a name = "Section 5"></a>Lists</h3>
 			</header>
 			<h5>
-			Lists: 
 			<ol><li>ordered list. <span>< ol ></span></li>
 			<li>unordered list. <span>< ul ></span></li></ol>
 			What's the difference?
@@ -132,7 +140,7 @@
 	<section>
 		<article>
 			<header>
-				<h3><a name = "Section 6"</a>CSS</h3>
+				<h3><a name = "Section 6"></a>CSS</h3>
 			</header>
 			<h5>
 			Basically cool font stuff. Colors, font, etc. 
@@ -185,7 +193,7 @@
 	<section>
 		<article>
 			<header>		
-				<h3><a name = "Section 7"</a>Div, Span and Classes</h3>
+				<h3><a name = "Section 7"></a>Div, Span and Classes</h3>
 			</header>
 			<h5>
 			The Div tag: can be used to completely surround an amount of text. 
@@ -200,7 +208,7 @@
 	<section>
 		<article>
 			<header>
-				<h3><a name = "Section 8"</a>Style Sheets, pseudo elements, child selectors, and ID</h3>
+				<h3><a name = "Section 8"></a>Style Sheets, pseudo elements, child selectors, and ID</h3>
 			</header>
 			<h5> a style sheet is used to apply consistent css effects to multiple webpages without having to copy and paste everything. 
 			The style sheet is on a separate css file and contains the default styling information. 
@@ -223,7 +231,7 @@
 	<section>
 		<article>
 			<header>
-				<h3><a name = "Section 9"</a>Positioning and Sizing</h3>
+				<h3><a name = "Section 9"></a>Positioning and Sizing</h3>
 			</header>
 			<h5> {position: static(default)/absolute/relative/fixed} 
 			(ex. text surrounded by border )
@@ -236,6 +244,43 @@
 			It stays where it is.
 			<br/>
 			{max-height:} / {max-width:} controls max height and max width without changing proportions of images
+			</h5>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 10"></a>Organizing Information on a Webpage</h3>
+			</header>
+			<h5> HTML5 tags used to separate information, such as:
+			<ul>
+				<li>< section ></li>
+				<li>< article ></li>
+				<li>< header ></li>
+				<li>< footer ></li>
+				<li>< aside > (sidebar)</li>
+				<li>< nav > (navigation)</li>
+			</ul>
+			Also, the introduction of the < meta > tag, which organizes meta data.
+			Its common use is < meta charset = "UTF-8" > which sets character encoding.
+			</h5>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 11"></a>Nth Child Selectors and Negation Psuedo Classes</h3>
+			</header>
+			<h5>Another one of the things you can do with nth child selectors is use psuedo elements with them. 
+				This way you can create cool effects.
+				For example, in tables tr:nth-child(odd) > td:nth-child(even){effect}
+				meaning if the table data is the child of an odd numbered row, the effect will take place.
+				This can be manipulated to produce a checkerboard effect.
+				You can also use negation pseudo classes, using a pseudo element such as not, for example
+				p:not(.class){effect}
+				In this statement, the effect will only occur if it is a paragraph text that is not of the class "class."
 			</h5>
 		</article>
 	</section>
