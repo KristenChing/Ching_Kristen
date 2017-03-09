@@ -1,0 +1,47 @@
+*{
+    font-family: Veranda;
+}
+
+h2{
+    text-align: center;
+}
+
+#main{
+    border: 5px solid teal;
+    background-color:lightblue;
+}
+
+a.articles{
+    background-color: white;
+
+}
+
+
+#topNav{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+
+}
+
+#navLi {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    padding: 20px;
+
+}
+.articles > header{
+
+}
+.articles > p {
+
+}
+.articles > footer{
+
+}
+
+#sidebar{
+
+}
