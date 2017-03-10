@@ -11,8 +11,10 @@ h2{
     background-color:lightblue;
 }
 
-a.articles{
+#articles{
     background-color: white;
+    position: relative;
+    left: 30px;
 
 }
 
@@ -32,16 +34,47 @@ a.articles{
     padding: 20px;
 
 }
-.articles > header{
+#articles > header{
+    position: relative;
+    left: 150px;
 
 }
-.articles > p {
+#articles > p {
 
 }
-.articles > footer{
+#articles > footer{
+    position: relative;
+    left: 300px;
 
 }
 
 #sidebar{
+    background-color: dodgerblue;
+    float: right;
+    position: fixed;
+    bottom: 500px;
+    width: 200px;
+    height: 200px;
+    right: 50px;
 
 }
+
+#sidebar > p{
+    text-align: center;
+}
+
+#mainfooter{
+    border: 5px solid teal;
+    position: relative;
+    float: right;
+    right: -5px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#mainfooter > p{
+    text-align: right;
+    padding: 10px;
+}
+
+
