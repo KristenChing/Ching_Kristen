@@ -1,0 +1,60 @@
+* {
+    font-family: Veranda;
+}
+
+h2{
+    text-align: center;
+}
+
+#main{
+    border: 5px solid teal;
+    background-color: lightblue;
+    -webkit-box-flex: 1;
+    -webkit-box-align: center;
+}
+
+#topNav li{
+    display: inline-block;
+    padding: 20px;
+
+
+}
+
+#topNav ul{
+    list-style-type: none;
+    background-color: white;
+}
+
+#articles{
+    -webit-box-flex: 1;
+    background-color: white;
+
+}
+
+section{
+    background-color:white;
+    margin: 20px;
+    padding: 20px;
+}
+
+#article1{
+    -webkit-box-orient: horizontal;
+    -webkit-box-ordinal-group: 3;
+    -webkit-box-flex: 1;
+}
+#article2{
+    -webkit-box-orient: horizontal;
+    -webkit-box-ordinal-group: 1;
+    -webkit-box-flex: 1;
+}
+#article3{
+    -webkit-box-orient: horizontal;
+    -webkit-box-ordinal-group: 4;
+    -webkit-box-flex: 1;
+}
+#article4{
+    -webkit-box-orient: horizontal;
+    -webkit-box-ordinal-group: 2;
+    -webkit-box-flex: 1;
+}
+
