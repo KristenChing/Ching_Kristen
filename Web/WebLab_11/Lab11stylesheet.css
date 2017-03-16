@@ -6,55 +6,60 @@ h2{
     text-align: center;
 }
 
+body{
+
+}
 #main{
     border: 5px solid teal;
     background-color: lightblue;
+    display: -webkit-box;
     -webkit-box-flex: 1;
-    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
 }
 
 #topNav li{
     display: inline-block;
     padding: 20px;
-
-
+    font-size: 20px;
 }
 
-#topNav ul{
+#topNav ul {
     list-style-type: none;
     background-color: white;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
 }
 
 #articles{
-    -webit-box-flex: 1;
+    -webkit-box-flex: 1;
     background-color: white;
 
 }
 
-section{
+#mainContent{
     background-color:white;
     margin: 20px;
     padding: 20px;
+    -webkit-box-flex: 1;
+    -webkit-ordinal-group: 1;
 }
 
-#article1{
-    -webkit-box-orient: horizontal;
-    -webkit-box-ordinal-group: 3;
+#sidebar{
+    background-color: dodgerblue;
     -webkit-box-flex: 1;
-}
-#article2{
-    -webkit-box-orient: horizontal;
-    -webkit-box-ordinal-group: 1;
-    -webkit-box-flex: 1;
-}
-#article3{
-    -webkit-box-orient: horizontal;
-    -webkit-box-ordinal-group: 4;
-    -webkit-box-flex: 1;
-}
-#article4{
-    -webkit-box-orient: horizontal;
     -webkit-box-ordinal-group: 2;
-    -webkit-box-flex: 1;
+}
+
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: right;
+}
+
+#mainfooter {
+    text-align: right;
 }
 
