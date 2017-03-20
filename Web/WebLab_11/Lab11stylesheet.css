@@ -12,9 +12,6 @@ body{
 #main{
     border: 5px solid teal;
     background-color: lightblue;
-    display: -webkit-box;
-    -webkit-box-flex: 1;
-    -webkit-box-orient: vertical;
 }
 
 #topNav li{
@@ -23,31 +20,40 @@ body{
     font-size: 20px;
 }
 
-#topNav ul {
+#topNav ul{
     list-style-type: none;
     background-color: white;
     display: -webkit-box;
     -webkit-box-flex: 1;
 }
 
-#articles{
-    -webkit-box-flex: 1;
-    background-color: white;
-
-}
-
 #mainContent{
-    background-color:white;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: horizontal;
     margin: 20px;
     padding: 20px;
+    max-width: 650px;
+    width: 80%;
+    height: 100%;
+}
+
+article{
+    max-width: 300px;
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
     -webkit-box-flex: 1;
-    -webkit-ordinal-group: 1;
+    height: 50%;
 }
 
 #sidebar{
-    background-color: dodgerblue;
+    text-align: center;
     -webkit-box-flex: 1;
-    -webkit-box-ordinal-group: 2;
+    max-width: 300px;
+    height: 500px;
+    margin: 10px;
+    background-color: dodgerblue;
 }
 
 
@@ -55,7 +61,7 @@ header{
     text-align: center;
 }
 
-footer{
+#artfooter{
     text-align: right;
 }
 
