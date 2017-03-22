@@ -1,0 +1,84 @@
+* {
+    font-family: Veranda;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+
+}
+#main{
+    border: 5px solid teal;
+    background: -webkit-linear-gradient(bottom, teal, lightblue);
+}
+
+#topNav li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#topNav li:hover{
+    color: blue;
+    -webkit-box-shadow: yellow 0px 0px 10px;
+    -webkit-transform: scale(1.25);
+    -webkit-transition: -webkit-transform 0.5s;
+
+}
+
+#topNav ul{
+    list-style-type: none;
+    background-color: white;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+}
+
+#mainContent{
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: horizontal;
+    margin: 20px;
+    padding: 20px;
+    max-width: 650px;
+    width: 80%;
+    height: 100%;
+}
+
+article{
+    -webkit-border-radius: 20px;
+    max-width: 300px;
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    -webkit-box-flex: 1;
+    height: 50%;
+}
+
+#sidebar{
+    -webkit-box-shadow: rgba(100, 100, 100, 10) 0px 20px 10px;
+    -webkit-border-radius: 5px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    max-width: 300px;
+    height: 500px;
+    margin: 10px;
+    background-color: dodgerblue;
+    outline:2px solid white;
+}
+
+
+header{
+    text-align: center;
+}
+
+#artfooter{
+    text-align: right;
+}
+
+#mainfooter {
+    text-align: right;
+    -webkit-transform: translate(-20px, 0px);
+}
+
