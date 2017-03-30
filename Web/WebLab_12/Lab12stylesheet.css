@@ -56,6 +56,12 @@ article{
     height: 50%;
 }
 
+article:hover{
+    -webkit-transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 0.5s;
+
+}
+
 #sidebar{
     -webkit-box-shadow: rgba(100, 100, 100, 10) 0px 20px 10px;
     -webkit-border-radius: 5px;
