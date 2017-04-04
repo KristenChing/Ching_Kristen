@@ -400,6 +400,8 @@
 			<li>setting up Javascript: < script type = "text/javascript" ></li>
 			<li>writing stuff in Javascript: document.write("Hello World!");</li>
 			<li> var variable = "text or number"</li>
+			<li>().length (basically len())
+			<li>document.getElementById("") accesses stuff from the .html</li>
 			<li> text: < input type = "text" size = 3 maxlength = 20 id = "userinput" value = "Enter text here"/ ></li>
 			<li>var var2 = document.getElementById("userinput").value;</li>
 			<li>function thisisafunction(){}</li>
@@ -408,8 +410,31 @@
 			<li> // this is a comment </li>
 			<li> /*this is also a comment*/ </li>
 			<li> alert("ALERT!!!");</li>
-			
 			</ul>
+			</h5>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<header>
+				<h3><a name = "Section 15"></a>Creating Shapes with Javascript</h3>
+			</header>
+			<h5>
+			< canvas width = "" height = "">
+			You can add text to a canvas element.
+			.getContext("2d"); sets context to 2d
+			canvas.fillRect(x, y, width, height);
+			window.addEventListener("load", shapes, false); (adds graphics)
+			default color for shapes is black
+			canvas.fillStyle = "color";
+			canvas.strokeStyle = "color";
+			canvas.strokeRect(x, y, width, height); (applies stroke to the rectangle with the specified dimensions, or makes a new rectangle that only has a stroke.
+			canvas.clearRect(x, y, width, height); (makes a white rectangle with the specified location and dimensions)
+			*something useful: having a variable hold a gradient value
+			canvas.createLinearGradient(x, y, width, height);
+			gradientVar.addColorStop(percentage, color); (0 = 0%, 1 = 100%) actually it's more like location---
+			
 			</h5>
 		</article>
 	</section>
