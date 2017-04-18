@@ -432,8 +432,15 @@
 			canvas.strokeRect(x, y, width, height); (applies stroke to the rectangle with the specified dimensions, or makes a new rectangle that only has a stroke.
 			canvas.clearRect(x, y, width, height); (makes a white rectangle with the specified location and dimensions)
 			*something useful: having a variable hold a gradient value
-			canvas.createLinearGradient(x, y, width, height);
+			(var gradient = )canvas.createLinearGradient(x, y, width, height);
 			gradientVar.addColorStop(percentage, color); (0 = 0%, 1 = 100%) actually it's more like location---
+			canvas.beginPath();
+			canvas.moveTo(x,y); (right, down)
+			canvas.lineTo(x,y);
+			canvas.closePath();
+			canvas.stroke();
+			
+			 
 			
 			</h5>
 		</article>
