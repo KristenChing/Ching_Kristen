@@ -12,6 +12,9 @@ snaketail.color("white")
 snaketail.pensize(5)
 snaketail.speed(0)
 snaketail.hideturtle()
+coords = []
+turns = 0
+#stTurns = 1
 speed = 1
 oldx = 0
 oldy = 0
@@ -20,36 +23,38 @@ oldoldy = 0
 turnedLeft = False
 turnedRight = False
 timer = 5
-
 def addspeed():
     global speed
     speed = 2
-def resetx():
+def resetcoords():
     global x
-    global oldx
-    global oldoldx
+##    global oldx
+##    global oldoldx
     x = snake.xcor()
-    oldoldx = oldx
-    oldx = x 
-def resety():
+##    oldoldx = oldx
+##    oldx = x 
     global y
-    global oldy
-    global oldoldy
+##    global oldy
+##    global oldoldy
     y = snake.ycor()
-    oldoldy = oldy
-    oldy = y
+##    oldoldy = oldy
+##    oldy = y
+    coords.append([])
+    coords[turns - 1].append(x)
+    coords[turns - 1].append(y)
 def left():
     global turnedLeft
+    global turns
+    turns += 1
     snake.left(90)
-    resetx()
-    resety()
+    resetcoords()
     turnedLeft = True
-
 def right():
     global turnedRight
+    global turns
+    turns += 1
     snake.right(90)
-    resetx()
-    resety()
+    resetcoords()
     turnedRight = True
 turtle.listen()
 turtle.onkey(left, "Left")
@@ -59,24 +64,41 @@ while True:
     snaketail.forward(speed)
     x = snake.xcor()
     y = snake.ycor()
-    if (snaketail.xcor() == oldx) and (snaketail.ycor() == oldy):
-        if turnedLeft == True:
-            snaketail.left(90)
-            addspeed()
-            turnedLeft = False
-        if turnedRight == True:
-            snaketail.right(90)
-            addspeed()
-            turnedRight = False
-    if (snaketail.xcor() == oldoldx) and (snaketail.ycor() == oldoldy):
-        if turnedLeft == True:
-            snaketail.left(90)
-            addspeed()
-            turnedLeft = False
-        if turnedRight == True:
-            snaketail.right(90)
-            addspeed()
-            turnedRight = False
+    print("turns", turns)
+    print("coords list", coords)
+    print("snake coords", snake.xcor(), snake.ycor()) 
+    print("snaketail coords", snaketail.xcor(), snaketail.ycor())
+    print("\n")
+    for x in range(turns):
+        if (snaketail.xcor() == coords[x][0]) and (snaketail.ycor() == coords[x][1]):
+            if turnedLeft == True:
+                snaketail.left(90)
+                addspeed()
+                turnedLeft = False
+                #stTurns += 1
+            if turnedRight == True:
+                snaketail.right(90)
+                addspeed()
+                turnedRight = False
+                #stTurns += 1
+##    if (snaketail.xcor() == oldx) and (snaketail.ycor() == oldy):
+##        if turnedLeft == True:
+##            snaketail.left(90)
+##            addspeed()
+##            turnedLeft = False
+##        if turnedRight == True:
+##            snaketail.right(90)
+##            addspeed()
+##            turnedRight = False
+##    if (snaketail.xcor() == oldoldx) and (snaketail.ycor() == oldoldy):
+##        if turnedLeft == True:
+##            snaketail.left(90)
+##            addspeed()
+##            turnedLeft = False
+##        if turnedRight == True:
+##            snaketail.right(90)
+##            addspeed()
+##            turnedRight = False
 
 
 #-------------------------------------debug code-------------------------------
